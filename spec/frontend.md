@@ -2,7 +2,7 @@
 [ Frontend Specification ]
 [[ Backend Specification ](backend.md "Backend Spec")]
 
-![image](https://user-images.githubusercontent.com/654993/194750260-830c1500-736c-43fc-9cdd-7b11325fb909.png)
+![image](https://user-images.githubusercontent.com/654993/194756446-454fc19f-f45e-4aee-8d02-7022b497f75e.png)
 
 ![image](https://user-images.githubusercontent.com/654993/194750242-2f62edcd-1e42-42dc-945a-7793ebd39701.png)
 
