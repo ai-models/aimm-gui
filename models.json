@@ -1,0 +1,110 @@
+[
+  {
+    "name": "BSRGAN",
+    "description": "Degradation Model for Deep Blind Image Super-Resolution",
+    "github_url": "https://github.com/cszn/",
+    "version": "v1.0",
+    "size": "220MB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/BSRGAN.pth"
+  },
+  {
+    "name": "Codeformer",
+    "description": "Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)",
+    "github_url": "https://github.com/sczhou/CodeFormer",
+    "version": "v0.1.0",
+    "size": "10MB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth"
+  },
+  {
+    "name": "Codeformer-parsing-parsenet",
+    "description": "Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)",
+    "github_url": "https://github.com/sczhou/CodeFormer",
+    "version": "v0.1.0",
+    "size": "142MB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/detection_Resnet50_Final.pth"
+  },
+  {
+    "name": "Codeformer-detection-resnet",
+    "description": "Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)",
+    "github_url": "https://github.com/sczhou/CodeFormer",
+    "version": "v0.1.0",
+    "size": "90MB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/parsing_parsenet.pth"
+  },
+  {
+    "name": "GFPGAN",
+    "description": "Practical Algorithms for real-world Face Restoration",
+    "github_url": "https://github.com/TencentARC/GFPGAN",
+    "version": "v1.4",
+    "size": "2GB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth"
+  },
+  {
+    "name": "RealESRGAN_x4plus_anime_6B",
+    "description": "Enhanced Super-Resolution Generative Adversarial Networks",
+    "github_url": "https://github.com/xinntao/Real-ESRGAN",
+    "version": "v2",
+    "size": "14GB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth"
+  },
+  {
+    "name": "RealESRGAN-x4v3",
+    "description": "Enhanced Super-Resolution Generative Adversarial Networks",
+    "github_url": "https://github.com/xinntao/Real-ESRGAN",
+    "version": "v3",
+    "size": "434MB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth"
+  },
+  {
+    "name": "RealESRGAN-wdn-x4v3",
+    "description": "Enhanced Super-Resolution Generative Adversarial Networks",
+    "github_url": "https://github.com/xinntao/Real-ESRGAN",
+    "version": "v3",
+    "size": "1TB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth"
+  },
+  {
+    "name": "ScuNET_real_gan",
+    "description": "Practical Blind Denoising via Swin-Conv-UNet and Data Synthesis",
+    "github_url": "https://github.com/cszn/SCUNet",
+    "version": "v3",
+    "size": "2TB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_gan.pth"
+  },
+  {
+    "name": "ScuNET_real_nsnr",
+    "description": "Practical Blind Denoising via Swin-Conv-UNet and Data Synthesis",
+    "github_url": "https://github.com/cszn/SCUNet",
+    "version": "v3",
+    "size": "82MB",
+    "category": "image-upscale",
+    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_psnr.pth"
+  },
+  {
+    "name": "Coqui-Ukrainian-STT-v0.4",
+    "description": "Ukrainian STT v0.4 (Yurii Paniv) for use with Coqui",
+    "github_url": "https://coqui.ai/ukrainian/robinhad/v0.4#download",
+    "version": "v0.4",
+    "size": "2MB",
+    "category": "speech-to-text",
+    "download_url": "https://github.com/robinhad/voice-recognition-ua/archive/refs/tags/v0.4.zip"
+  },
+  {
+    "name": "Coqui-English-STT-v1.0.0-huge-vocab",
+    "description": "https://coqui.ai/english/coqui/v1.0.0-huge-vocab#download",
+    "github_url": "English STT v1.0.0 (Huge Vocabulary)",
+    "version": "v0.4",
+    "size": "652MB",
+    "category": "speech-to-text",
+    "download_url": "https://github.com/coqui-ai/STT-models/archive/refs/tags/english/coqui/v1.0.0-huge-vocab.zip"
+  }
+]
