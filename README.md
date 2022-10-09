@@ -3,8 +3,8 @@
 [README.md]
 [[Frontend Specification](spec/frontend.md "Frontend Spec")]
 [[Backend Specification](spec/backend.md "Backend Spec")]
-S
-The goal is serve third party apps local models and information to reduce the need for model storage duplication for each app.
+
+Poms improves user experience by reducing duplication of models stored on their hard drive. Eases developer access to AI models by returning the local path to the model or initiating download of the model. 
 
 ###The problems this solves:
 
