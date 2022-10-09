@@ -1,6 +1,6 @@
-[[README.md](../README.md "README")]
-[Frontend Specification]
-[[Backend Specification](backend.md "Backend Spec")]
+[[ README ](../README.md "README")]
+[ Frontend Specification ]
+[[ Backend Specification ](backend.md "Backend Spec")]
 
 ![image](https://user-images.githubusercontent.com/654993/194750260-830c1500-736c-43fc-9cdd-7b11325fb909.png)
 
