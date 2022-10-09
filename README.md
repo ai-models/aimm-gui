@@ -1,12 +1,13 @@
-##Poms is an AI model manager. 
+## Poms is an AI model manager. 
 
 [ README.md ]
 [[ Frontend Specification ](spec/frontend.md "Frontend Spec")]
 [[ Backend Specification ](spec/backend.md "Backend Spec")]
 
-Poms improves user experience by reducing duplication of models stored on their hard drive. Eases developer access to AI models by returning the local path to the model or initiating download of the model. 
+Poms improves user experience by reducing duplication of models stored locally. Eases developer access to AI models by returning the local path to the model or initiating download of the model. 
+![image](https://user-images.githubusercontent.com/654993/194756455-7d87bb76-24e5-4d4b-b046-8f5a656f63b7.png)
 
-###The problems this solves:
+### The problems this solves:
 
 1) **Drive space**: Many AI interfaces contain a /models directory, and often multiple software installations will utilize the same model files, using a lot of drive space
 2) **Ease Development**: Individual tools have to juggle downloading and installing these models. This can simplify that process and allow third party developers to focus on their app functionality
