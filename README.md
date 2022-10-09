@@ -1,10 +1,10 @@
-## Poms is an AI model manager. 
+## Pons is an AI model manager. 
 
 [ README.md ]
 [[ Frontend Specification ](spec/frontend.md "Frontend Spec")]
 [[ Backend Specification ](spec/backend.md "Backend Spec")]
 
-Poms improves user experience by reducing duplication of models stored locally. Eases developer access to AI models by returning the local path to the model or initiating download of the model. 
+Pons improves user experience by reducing duplication of models stored locally. Eases developer access to AI models by returning the local path to the model or initiating download of the model. 
 ![image](https://user-images.githubusercontent.com/654993/194756455-7d87bb76-24e5-4d4b-b046-8f5a656f63b7.png)
 
 ### The problems this solves:
