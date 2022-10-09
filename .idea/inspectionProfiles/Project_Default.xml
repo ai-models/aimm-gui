@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPackageRequirementsInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredPackages">
+        <value>
+          <list size="14">
+            <item index="0" class="java.lang.String" itemvalue="basicsr" />
+            <item index="1" class="java.lang.String" itemvalue="gradio" />
+            <item index="2" class="java.lang.String" itemvalue="timm" />
+            <item index="3" class="java.lang.String" itemvalue="realesrgan" />
+            <item index="4" class="java.lang.String" itemvalue="GFPGAN" />
+            <item index="5" class="java.lang.String" itemvalue="jsonmerge" />
+            <item index="6" class="java.lang.String" itemvalue="torchdiffeq" />
+            <item index="7" class="java.lang.String" itemvalue="clean-fid" />
+            <item index="8" class="java.lang.String" itemvalue="resize-right" />
+            <item index="9" class="java.lang.String" itemvalue="font-roboto" />
+            <item index="10" class="java.lang.String" itemvalue="fonts" />
+            <item index="11" class="java.lang.String" itemvalue="fairscale" />
+            <item index="12" class="java.lang.String" itemvalue="gfpgan" />
+            <item index="13" class="java.lang.String" itemvalue="piexif" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="false" level="WEAK WARNING" enabled_by_default="false">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E111" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
+    <inspection_tool class="PyTypeCheckerInspection" enabled="false" level="WARNING" enabled_by_default="false" />
+  </profile>
+</component>

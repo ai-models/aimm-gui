@@ -1,6 +1,9 @@
-
 ##Poms is an AI model manager. 
 
+[README.md]
+[[Frontend Specification](spec/frontend.md "Frontend Spec")]
+[[Backend Specification](spec/backend.md "Backend Spec")]
+S
 The goal is serve third party apps local models and information to reduce the need for model storage duplication for each app.
 
 ###The problems this solves:
@@ -11,12 +14,12 @@ The goal is serve third party apps local models and information to reduce the ne
 4) **Improves discovery**, Description / links to Github & Hugging Face 
 
 ### General Architecture
-Front end  [[Design Specification](http://example.com "Title")]
+Front end  [[Frontend Specification](http://example.com "Title")]
 - Lightweight Desktop widget
 - View & Delete installed models
 - Browse models & install custom
 
-Backend [[Design Specification](http://example.com "Title")]
+Backend [[Backend Specification](http://example.com "Title")]
 - Local API (third party app request model by name or MD5 and Poms will return path or begin download while returning state information to app)
 - Manage storage of models
 
@@ -27,10 +30,3 @@ Backend [[Design Specification](http://example.com "Title")]
 - What simplifies and provides the best value to end users? Already installing this as a pre-requisite app is a bit of friction. 
 - What license is best for this? 
 
-Design Spec
-
-![image](https://user-images.githubusercontent.com/654993/194750260-830c1500-736c-43fc-9cdd-7b11325fb909.png)
-
-![image](https://user-images.githubusercontent.com/654993/194750242-2f62edcd-1e42-42dc-945a-7793ebd39701.png)
-
-![image](https://user-images.githubusercontent.com/654993/194750284-23f1dc46-654c-430e-a511-c93943357893.png)
