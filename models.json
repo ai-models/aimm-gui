@@ -8,6 +8,7 @@
     "size": "220MB",
     "category": "image-upscale",
     "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/BSRGAN.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "Codeformer",
@@ -16,7 +17,8 @@
     "version": "v0.1.0",
     "size": "10MB",
     "category": "image-upscale",
-    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth"
+    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/codeformer.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "Codeformer-parsing-parsenet",
@@ -25,7 +27,8 @@
     "version": "v0.1.0",
     "size": "142MB",
     "category": "image-upscale",
-    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/detection_Resnet50_Final.pth"
+    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/detection_Resnet50_Final.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "Codeformer-detection-resnet",
@@ -34,7 +37,8 @@
     "version": "v0.1.0",
     "size": "90MB",
     "category": "image-upscale",
-    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/parsing_parsenet.pth"
+    "download_url": "https://github.com/sczhou/CodeFormer/releases/download/v0.1.0/parsing_parsenet.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "GFPGAN",
@@ -43,7 +47,8 @@
     "version": "v1.4",
     "size": "2GB",
     "category": "image-upscale",
-    "download_url": "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth"
+    "download_url": "https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.4.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "RealESRGAN_x4plus_anime_6B",
@@ -52,7 +57,8 @@
     "version": "v2",
     "size": "14GB",
     "category": "image-upscale",
-    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth"
+    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.2.4/RealESRGAN_x4plus_anime_6B.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "RealESRGAN-x4v3",
@@ -61,7 +67,8 @@
     "version": "v3",
     "size": "434MB",
     "category": "image-upscale",
-    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth"
+    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "RealESRGAN-wdn-x4v3",
@@ -70,7 +77,8 @@
     "version": "v3",
     "size": "1TB",
     "category": "image-upscale",
-    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth"
+    "download_url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesr-general-x4v3.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "ScuNET_real_gan",
@@ -79,7 +87,8 @@
     "version": "v3",
     "size": "2TB",
     "category": "image-upscale",
-    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_gan.pth"
+    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_gan.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "ScuNET_real_nsnr",
@@ -88,7 +97,8 @@
     "version": "v3",
     "size": "82MB",
     "category": "image-upscale",
-    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_psnr.pth"
+    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/scunet_color_real_psnr.pth",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "Coqui-Ukrainian-STT-v0.4",
@@ -97,7 +107,8 @@
     "version": "v0.4",
     "size": "2MB",
     "category": "speech-to-text",
-    "download_url": "https://github.com/robinhad/voice-recognition-ua/archive/refs/tags/v0.4.zip"
+    "download_url": "https://github.com/robinhad/voice-recognition-ua/archive/refs/tags/v0.4.zip",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   },
   {
     "name": "Coqui-English-STT-v1.0.0-huge-vocab",
@@ -106,6 +117,7 @@
     "version": "v0.4",
     "size": "652MB",
     "category": "speech-to-text",
-    "download_url": "https://github.com/coqui-ai/STT-models/archive/refs/tags/english/coqui/v1.0.0-huge-vocab.zip"
+    "download_url": "https://github.com/coqui-ai/STT-models/archive/refs/tags/english/coqui/v1.0.0-huge-vocab.zip",
+    "md5": "597e1eecbe9ab999fcf12d43a1f75014"
   }
 ]
