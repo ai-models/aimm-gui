@@ -3,10 +3,11 @@
     "name": "BSRGAN",
     "description": "Degradation Model for Deep Blind Image Super-Resolution",
     "github_url": "https://github.com/cszn/",
+    "huggingface_url": "https://test.com/bsrgan/",
     "version": "v1.0",
     "size": "220MB",
     "category": "image-upscale",
-    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/BSRGAN.pth"
+    "download_url": "https://github.com/cszn/KAIR/releases/download/v1.0/BSRGAN.pth",
   },
   {
     "name": "Codeformer",
