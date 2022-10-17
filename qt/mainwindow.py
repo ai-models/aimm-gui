@@ -1,23 +1,41 @@
-# This Python file uses the following encoding: utf-8
-import sys
+from PyQt6 import QtWidgets, QtCore
 
-from PySide6.QtWidgets import QApplication, QMainWindow
-
-# Important:
-# You need to run the following command to generate the ui_form.py file
-#     pyside6-uic form.ui -o ui_form.py, or
-#     pyside2-uic form.ui -o ui_form.py
-from ui_form import Ui_MainWindow
-
-class MainWindow(QMainWindow):
-    def __init__(self, parent=None):
-        super().__init__(parent)
-        self.ui = Ui_MainWindow()
-        self.ui.setupUi(self)
+from qt.scroll_area import Scroll_area
+from qt.headers import Headers_Display
+from qt.top_bar import Top_Bar
 
 
-if __name__ == "__main__":
-    app = QApplication(sys.argv)
-    widget = MainWindow()
-    widget.show()
-    sys.exit(app.exec())
+class Window(QtWidgets.QMainWindow):
+    def __init__(self, json_handler):
+        super().__init__()
+        self.json_handler = json_handler
+        self.init_ui()
+
+    def init_ui(self):
+        self.setWindowTitle("Pons AI Model Manager")
+        self.setMinimumSize(QtCore.QSize(1000, 600))
+
+        self.main_layout = QtWidgets.QVBoxLayout()
+        self.main_layout.setAlignment(QtCore.Qt.AlignmentFlag.AlignTop)
+        central_widget = QtWidgets.QWidget()
+        central_widget.setLayout(self.main_layout)
+        self.setCentralWidget(central_widget)
+
+        top_bar = Top_Bar()
+
+        bottom_part = QtWidgets.QWidget()
+        bottom_part_layout = QtWidgets.QVBoxLayout()
+        bottom_part_layout.setSpacing(0)
+        bottom_part.setLayout(bottom_part_layout)
+        headers = Headers_Display()
+        scroll = Scroll_area(self)
+
+        models = self.json_handler.get_models()
+        scroll.add_models(models)
+
+        bottom_part_layout.addWidget(headers)
+        bottom_part_layout.addWidget(scroll)
+        self.main_layout.addWidget(top_bar)
+        self.main_layout.addWidget(bottom_part)
+
+        self.show()
