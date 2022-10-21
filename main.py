@@ -1,12 +1,13 @@
-from PyQt6 import QtWidgets, QtCore, QtGui
+from PySide6.QtWidgets import QApplication
 import sys
 
+from widgets.main_window import MainWindow
 
-import qt.mainwindow
-import logic.json_backend
 
 if __name__ == "__main__":
-    app = QtWidgets.QApplication(sys.argv)
-    json_handler = logic.json_backend.Json_Handler()
-    window = qt.mainwindow.Window(json_handler)
+    app = QApplication(sys.argv)
+    app.setStyle("Fusion")
+    window = MainWindow()
+    window.show()
+    window.resize(1000, 600)
     sys.exit(app.exec())
