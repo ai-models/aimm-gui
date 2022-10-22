@@ -2,8 +2,8 @@
   {
     "name": "BSRGAN",
     "description": "Degradation Model for Deep Blind Image Super-Resolution",
-    "github_url": "https://github.com/cszn/",
-    "huggingface_url": "https://test.com/bsrgan/",
+    "github_url": "https://github.com/cszn",
+    "huggingface_url": "https://test.com/bsrgan",
     "version": "v1.0",
     "size": "220MB",
     "category": "image-upscale",
@@ -12,7 +12,7 @@
   },
   {
     "name": "Codeformer",
-    "description": "Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)",
+    "description": "Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022) Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022) Robust Blind Face Restoration with Codebook Lookup Transformer (NeurIPS 2022)",
     "github_url": "https://github.com/sczhou/CodeFormer",
     "version": "v0.1.0",
     "size": "10MB",

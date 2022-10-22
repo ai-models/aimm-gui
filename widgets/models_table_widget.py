@@ -1,3 +1,4 @@
+from PySide6 import QtCore
 from PySide6.QtWidgets import QTableWidget, QHeaderView
 from widgets.model_row import ModelRow
 
@@ -6,6 +7,7 @@ class ModelsTableWidget(QTableWidget):
     def __init__(self, main_window):
         super().__init__()
         self.main_window = main_window
+        self.setShowGrid(False)
         self.models = []
         self.setColumnCount(7)
         self.setHorizontalHeaderLabels(["", 'Category', 'Name', 'Version', 'Size', 'Links', ''])
@@ -14,10 +16,8 @@ class ModelsTableWidget(QTableWidget):
         self.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Interactive)
         self.horizontalHeader().setSectionResizeMode(5, QHeaderView.ResizeMode.Stretch)
         self.horizontalHeader().setSectionResizeMode(6, QHeaderView.ResizeMode.Fixed)
-
+        self.horizontalHeader().setDefaultAlignment(QtCore.Qt.AlignLeft)
         self.verticalHeader().setVisible(False)
-
-        self.setShowGrid(False)
 
     def add_model(self, model: "ModelRow"):
         self.models.append(model)
