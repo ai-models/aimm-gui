@@ -7,13 +7,13 @@ class ModelsTableWidget(QTableWidget):
         super().__init__()
         self.main_window = main_window
         self.models = []
-        self.setColumnCount(5)
-        self.setHorizontalHeaderLabels(["", 'Name', 'Description', 'Version', 'Size', 'Github', 'Install'])
+        self.setColumnCount(7)
+        self.setHorizontalHeaderLabels(["", 'Category', 'Name', 'Version', 'Size', 'Links', ''])
         self.setSelectionBehavior(QTableWidget.SelectionBehavior.SelectRows)
         self.horizontalHeader().setSectionResizeMode(0, QHeaderView.ResizeMode.ResizeToContents)
         self.horizontalHeader().setSectionResizeMode(1, QHeaderView.ResizeMode.Interactive)
-        self.horizontalHeader().setSectionResizeMode(2, QHeaderView.ResizeMode.Stretch)
-        self.horizontalHeader().setSectionResizeMode(3, QHeaderView.ResizeMode.ResizeToContents)
+        self.horizontalHeader().setSectionResizeMode(5, QHeaderView.ResizeMode.Stretch)
+        self.horizontalHeader().setSectionResizeMode(6, QHeaderView.ResizeMode.Fixed)
 
         self.verticalHeader().setVisible(False)
 

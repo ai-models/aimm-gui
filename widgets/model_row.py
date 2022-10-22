@@ -19,13 +19,13 @@ class ModelRow:
         self.collapse_button.clicked.connect(self.toggle_selected)
         self.widgets.append(self.collapse_button)
 
-        name = QLabel(self.model_info['name'])
-        name.setWordWrap(True)
-        self.widgets.append(name)
+        category = QLabel(self.model_info['category'])
+        category.setWordWrap(False)
+        self.widgets.append(category)
 
-        description = QLabel(self.model_info['description'])
-        description.setWordWrap(True)
-        self.widgets.append(description)
+        name = QLabel(self.model_info['name'])
+        name.setWordWrap(False)
+        self.widgets.append(name)
 
         version = QLabel(self.model_info['version'])
         self.widgets.append(version)
