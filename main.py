@@ -2,7 +2,6 @@ import uvicorn
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 import sys, os
-from logic import ApiHandler
 
 from widgets.main_window import MainWindow
 basedir_icons = os.path.dirname(__file__) + "\icons\\"
@@ -36,7 +35,5 @@ if __name__ == "__main__":
   tray.setContextMenu(menu)
 
   ## Launch API
-  app.api = ApiHandler()
-  api = app.api.start_api()
-
-sys.exit(app.exec())
+  subprocess()
+# sys.exit(app.exec())
