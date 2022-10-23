@@ -1,7 +1,6 @@
 import json
 import os
 
-
 class JsonHandler:
     @staticmethod
     def get_models():

@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 pyside6 = "*"
 fastapi = "*"
+uvicorn = "*"
 
 [dev-packages]
 pyinstaller = "*"

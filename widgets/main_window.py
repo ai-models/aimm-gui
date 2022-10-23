@@ -6,7 +6,6 @@ from PySide6.QtGui import QIcon
 from logic import JsonHandler
 from widgets.models_table_widget import ModelsTableWidget
 from widgets.top_bar import TopBar
-
 basedir = os.path.dirname(__file__)
 
 basedir_icons = os.path.dirname(__file__) + "\..\icons\\"
@@ -53,6 +52,4 @@ class MainWindow(QMainWindow):
 
     ## Icons
     self.setWindowIcon(QIcon(os.path.join(basedir_icons, 'icon.png')))
-
-
 
