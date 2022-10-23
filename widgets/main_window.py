@@ -30,18 +30,6 @@ class MainWindow(QMainWindow):
     ## Window
     self.setContentsMargins(0, 0, 0, 0)
     self.setStyleSheet("""
-            QTableView::item:selected {
-                background-color: #c5f5fe;
-                border: 0;
-                }
-            QTableView::item:focus {
-                background-color: #c5f5fe;
-                border: 0;
-                }
-            QTableView::row:hover {
-                background-color: #d0d0d0;
-                border: 0;
-                }
             QTableView {background-color: white; border: 0;}
             QTableView QHeaderView {border: 0 solid #f0f0f0; background: #f0f0f0;}
             QTableView QToolButton {border: 0px}
