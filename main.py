@@ -1,4 +1,5 @@
-import uvicorn
+import asyncio
+from asyncio.subprocess import Process
 from PySide6.QtGui import QAction, QIcon
 from PySide6.QtWidgets import QApplication, QSystemTrayIcon, QMenu
 import sys, os
@@ -34,6 +35,12 @@ if __name__ == "__main__":
   # Add the menu to the tray
   tray.setContextMenu(menu)
 
-  ## Launch API
-  subprocess()
-# sys.exit(app.exec())
+
+  async def apistart():
+    # process: Process = await asyncio.create_subprocess_exec('python','api/main.py')
+    process: Process = await asyncio.create_subprocess_exec('.\dist\\api\\api.exe')
+    print(f'Process pid is: {process.pid}')
+
+asyncio.run(apistart())
+
+sys.exit(app.exec())
