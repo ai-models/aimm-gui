@@ -5,9 +5,10 @@ name = "pypi"
 
 [packages]
 pyside6 = "*"
-pillow = "*"
 
 [dev-packages]
+pyinstaller = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.10"
