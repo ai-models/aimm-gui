@@ -9,7 +9,10 @@ from widgets.main_window import MainWindow
 from widgets.trayicon import run
 
 if __name__ == "__main__":
-  app = QApplication(sys.argv)
+  if not QApplication.instance():
+    app = QApplication(sys.argv)
+  else:
+    app = QApplication.instance()
   app.setStyle("Fusion")
   window = MainWindow()
   window.show()
@@ -22,6 +25,5 @@ if __name__ == "__main__":
     process: Process = await asyncio.create_subprocess_exec('.\dist\\api\\api.exe')
     print(f'Process pid is: {process.pid}')
 
-asyncio.run(apistart())
-
-sys.exit(app.exec())
+  asyncio.run(apistart())
+  sys.exit(app.exec())
