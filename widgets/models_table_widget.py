@@ -28,7 +28,6 @@ class ModelsTableWidget(QTableWidget):
         self.setStyleSheet("""
                            QTableWidget::item:selected{
                                color: #ffffff;
-                               background-color: #red;
                                }""")
 
     def add_model(self, model: "ModelRow"):
@@ -44,6 +43,9 @@ class ModelsTableWidget(QTableWidget):
         # Set row span
         self.setSpan(index + 1, 0, 1, 7)
         # Add the model info to the row
+        self.setStyleSheet("""
+            ::item:selected { background-color: #c5f5fe; }
+        """)
         self.setCellWidget(index + 1, 0, model.detailed_model)
         # Hide the row
         self.hideRow(index + 1)

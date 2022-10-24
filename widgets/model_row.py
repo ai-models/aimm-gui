@@ -15,10 +15,12 @@ class ModelRow:
                                                    background-color: #ffffff;
                                                    }
                                                
+                                               QTableWidget::item:hover {
+                                                    background-color: gray;
+                                                    }
                                                QTableWidget::item:selected{
                                                    color: #ffffff;
                                                    background-color: #c5f5fe;
-                                                   border: 0;
                                                    }""")
         self.model_info = model_info
 

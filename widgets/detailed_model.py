@@ -5,9 +5,6 @@ class DetailedModel(QWidget):
     def __init__(self, row):
         super().__init__()
         self.model_row = row
-        self.setStyleSheet("""
-        background-color: #c5f5fe; 
-        """)
         self.main_layout = QVBoxLayout()
         self.setLayout(self.main_layout)
 
