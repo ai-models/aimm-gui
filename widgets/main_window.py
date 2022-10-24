@@ -21,8 +21,6 @@ class MainWindow(QMainWindow):
         self.setMinimumSize(QSize(800, 400))
         self.setWindowIcon(QIcon('icons/icon.png'))
         self.setStyleSheet("""
-            QWidget {background-color: white;}
-            QTableView {background-color: gray}
             QTableView {border-top: 0px; border-left: 0px; border-right: 0px;}
             QTableView QPushButton {margin: 3px 5px; background-color: #ffffff;}
             QToolButton {border: 0px}

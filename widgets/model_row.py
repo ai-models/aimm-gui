@@ -17,7 +17,8 @@ class ModelRow:
                                                
                                                QTableWidget::item:selected{
                                                    color: #ffffff;
-                                                   background-color: blue;
+                                                   background-color: #c5f5fe;
+                                                   border: 0;
                                                    }""")
         self.model_info = model_info
 
