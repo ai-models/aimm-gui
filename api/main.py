@@ -41,7 +41,7 @@ def get_model_details_by_hash(hash1: str, hash2: str, hash3: str): # url: /get_m
 def symlink_by_name(data: Symlink): # url: /symlink_by_name
     return {"status": "success"}
 
-@app.post("/symlink_by_hash", response_mode=Status)
+@app.post("/symlink_by_hash", response_model=Status)
 def symlink_by_hash(data: SymlinkByHash): # url: /symlink_by_hash?hash=...&symlink_location=...
     return {"status": "success"}
 
