@@ -20,10 +20,10 @@ if __name__ == "__main__":
 
   app.run = run(window)
 
-  async def apistart():
-    # process: Process = await asyncio.create_subprocess_exec('python','api/main.py')
-    process: Process = await asyncio.create_subprocess_exec('.\dist\\api\\api.exe')
-    print(f'Process pid is: {process.pid}')
+  # async def apistart():
+  #   # process: Process = await asyncio.create_subprocess_exec('python','api/main.py')
+  #   process: Process = await asyncio.create_subprocess_exec('.\dist\\api\\api.exe')
+  #   print(f'Process pid is: {process.pid}')
 
-  asyncio.run(apistart())
+  # asyncio.run(apistart())
   sys.exit(app.exec())
