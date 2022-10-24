@@ -1,4 +1,3 @@
-from PySide6 import QtCore
 from PySide6.QtCore import QUrl, Slot
 from PySide6.QtGui import QDesktopServices, Qt
 from PySide6.QtWidgets import QLabel, QPushButton, QToolButton
@@ -10,6 +9,15 @@ class ModelRow:
     def __init__(self, models_table_widget: "ModelsTableWidget", model_info: dict):
         super().__init__()
         self.models_table_widget = models_table_widget
+        self.models_table_widget.setStyleSheet("""
+                                               QTableWidget{
+                                                   background-color: #ffffff;
+                                                   }
+                                               
+                                               QTableWidget::item:selected{
+                                                   color: #ffffff;
+                                                   background-color: blue;
+                                                   }""")
         self.model_info = model_info
 
         self.detailed_model = DetailedModel(self)
@@ -22,28 +30,24 @@ class ModelRow:
 
         category = QLabel(self.model_info['category'])
         category.setWordWrap(False)
-        category.setStyleSheet('padding: 0px 5px')
+        # hover status
+        category.setToolTip("This is the category")
         self.widgets.append(category)
 
         name = QLabel(self.model_info['name'])
-        name.setStyleSheet('padding:0px 5px')
         name.setWordWrap(False)
+        # hover status
+        name.setToolTip(f"This is the name: {self.model_info['name']}")
         self.widgets.append(name)
 
         version = QLabel(self.model_info['version'])
-        version.setStyleSheet('padding:0px 5px')
-        version.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
         self.widgets.append(version)
 
-
         size_label = QLabel(self.model_info['size'])
-        size_label.setStyleSheet('padding:0px 5px')
-        size_label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignVCenter)
         self.widgets.append(size_label)
 
         github_url = QLabel(f'<a href={self.model_info["github_url"]}>Github</a>')
         github_url.setOpenExternalLinks(True)
-        github_url.setStyleSheet('padding:0px 5px')
         github_url.linkActivated.connect(self.open_link)
         self.widgets.append(github_url)
 
