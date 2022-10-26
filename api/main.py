@@ -13,20 +13,20 @@ async def root():
     return {"message": "Hello World"}
 
 @app.get("/get_path")
-def get_models_path_by_name(project_name, by='name'):
+def get_models_path(project_name, by='name'):
 
     return {"path": "/this/test/path"}
 
 @app.get("/install")
-def download_models_by_name(project_name, by='name'):
+def download_models(project_name, by='name'):
     return {"path": "/this/test/path", "download": "complete"}
 
 @app.get("/get_details")
-def get_model_details_by_name(project_name, by='name'):
+def get_model_details(project_name, by='name'):
     return {"info": "json array"}
 
 @app.post("/symlink", response_model=Status)
-def symlink_by_name(project_name, by='name', destination='path'):
+def symlink(project_name, by='name', destination='path'):
     return {"status": "success"}
 
 if __name__ == "__main__":
