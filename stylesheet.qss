@@ -1,0 +1,32 @@
+QTableView {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+}
+
+QTableWidget::item:selected{
+   background-color: transparent;
+}
+
+QTableView QLabel {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+QHeaderView::section {
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 1px;
+}
+
+#green_button {
+    background-color: #c5fed5;
+}
+
+#checksum {
+    color: gray;
+}
+
+#install_button {
+    margin: 5px;
+}
