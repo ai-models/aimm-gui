@@ -2,6 +2,7 @@ import os
 from PySide6.QtGui import QIcon
 from PySide6.QtWidgets import QSystemTrayIcon, QMenu
 
+
 class SystemTrayIcon(QSystemTrayIcon):
     def __init__(self, icon, win, parent=None):
         QSystemTrayIcon.__init__(self, icon, parent)
@@ -15,21 +16,21 @@ class SystemTrayIcon(QSystemTrayIcon):
         # self.activated.connect(self.trayiconclicked)
 
 
-
 def run(win):
     basedir_icons = os.path.dirname(__file__) + "\..\icons\\"
-    print(os.path.join(basedir_icons, 'icon.png'))
+    # print(os.path.join(basedir_icons, "icon.png"))
     # app.setQuitOnLastWindowClosed(False)
     # Create the icon
-    icon = QIcon(os.path.join(basedir_icons, 'icon.png'))
+    icon = QIcon(os.path.join(basedir_icons, "icon.png"))
 
     # Create the tray
     tray = QSystemTrayIcon(icon, win)
     tray.setVisible(True)
     tray.activated.connect(trayiconclicked)
 
+
 def trayiconclicked(reason):
     print(reason)
-    if str(reason) == 'ActivationReason.Trigger':
-        print('ay')
+    if str(reason) == "ActivationReason.Trigger":
+        print("ay")
         # print("SysTrayIcon left clicked")
