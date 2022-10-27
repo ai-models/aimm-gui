@@ -24,7 +24,7 @@ if __name__ == "__main__":
     app.setStyleSheet((bundle_dir / "stylesheet.qss").read_text())
     window = MainWindow()
     window.show()
-    window.resize(1000, 600)
+    window.resize(600, 400)
 
     app.run = run(window)
 

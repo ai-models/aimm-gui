@@ -20,7 +20,6 @@ class MainWindow(QMainWindow):
         super().__init__()
         self.json_handler = JsonHandler()
         self.setWindowTitle("Pons AI Model Manager")
-        self.setMinimumSize(QSize(800, 400))
         self.setWindowIcon(QIcon("icons/icon.png"))
 
         central_widget = QWidget()
@@ -42,7 +41,8 @@ class MainWindow(QMainWindow):
         self.add_model_table_widget.add_models(self.json_handler.get_models())
         self.table_layout.addWidget(self.add_model_table_widget)
 
-        self.add_model_table_widget.setColumnWidth(2, 600)
+
+        self.add_model_table_widget.setColumnWidth(2, 140)
         self.add_model_table_widget.resizeColumnToContents(3)
         self.add_model_table_widget.resizeColumnToContents(4)
 
