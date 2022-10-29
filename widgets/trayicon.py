@@ -21,7 +21,7 @@ def run(win):
     # print(os.path.join(basedir_icons, "icon.png"))
     # app.setQuitOnLastWindowClosed(False)
     # Create the icon
-    icon = QIcon(os.path.join(basedir_icons, "icon.png"))
+    icon = QIcon(os.path.join(basedir_icons, "icon-mono.png"))
 
     # Create the tray
     tray = QSystemTrayIcon(icon, win)

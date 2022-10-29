@@ -19,7 +19,7 @@ class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
         self.json_handler = JsonHandler()
-        self.setWindowTitle("Pons AI Model Manager")
+        self.setWindowTitle("AI Model Manager")
         self.setWindowIcon(QIcon("icons/icon.png"))
 
         central_widget = QWidget()
