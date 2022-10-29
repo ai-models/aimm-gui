@@ -40,7 +40,7 @@ class TopBar(QWidget):
 
     def go_to_tab(self, tab: int):
         self.main_window.table_layout.setCurrentIndex(tab)
-        if tab in (1, 2):
-            self.add_custom_button.show()
-        else:
-            self.add_custom_button.hide()
+        # if tab in (1, 2):
+        #     self.add_custom_button.show()
+        # else:
+        #     self.add_custom_button.hide()
