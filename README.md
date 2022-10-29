@@ -1,4 +1,4 @@
-## Pons is an AI model manager. (will be, right now is specifications)
+AI model manager. (will be, in development)
 
 [ README.md ]
 [[ Frontend Specification ](spec/frontend.md "Frontend Spec")]
