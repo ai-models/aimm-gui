@@ -17,11 +17,11 @@ class TopBar(QWidget):
         add_model_button.clicked.connect(lambda: self.go_to_tab(1))
         self.main_layout.addWidget(add_model_button)
 
-        self.add_custom_button = QPushButton("Add Custom")
-        self.add_custom_button.setObjectName("green_button")
-        self.add_custom_button.clicked.connect(lambda: self.go_to_tab(2))
-        self.main_layout.addWidget(self.add_custom_button)
-        self.add_custom_button.hide()
+        # self.add_custom_button = QPushButton("Add Custom")
+        # self.add_custom_button.setObjectName("green_button")
+        # self.add_custom_button.clicked.connect(lambda: self.go_to_tab(2))
+        # self.main_layout.addWidget(self.add_custom_button)
+        # self.add_custom_button.hide()
 
         self.main_layout.addStretch()
 
@@ -38,10 +38,10 @@ class TopBar(QWidget):
 
     def go_to_tab(self, tab: int):
         self.main_window.table_layout.setCurrentIndex(tab)
-        if tab in (1, 2):
-            self.add_custom_button.show()
-        else:
-            self.add_custom_button.hide()
+        # if tab in (1, 2):
+        #     self.add_custom_button.show()
+        # else:
+        #     self.add_custom_button.hide()
 
     def update_categories(self, categories: set):
         self.categories.clear()
