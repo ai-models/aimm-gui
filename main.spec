@@ -8,7 +8,7 @@ a = Analysis(
     ['main.py'],
     pathex=[],
     binaries=[],
-    datas=[('models.json','.'),('LICENSE','.'),('icons','icons')],
+    datas=[('models.json', '.'), ('LICENSE', '.'), ('icons', 'icons'), ("stylesheet.qss", ".")],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -41,7 +41,7 @@ exe = EXE(
 )
 
 api_a = Analysis(
-    ['api\\api.py'],
+    ['api\\main.py'],
     pathex=[],
     binaries=[],
     datas=[],

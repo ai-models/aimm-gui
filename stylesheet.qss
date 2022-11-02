@@ -14,19 +14,79 @@ QTableView QLabel {
 }
 
 QHeaderView::section {
-    padding-left: 8px;
-    padding-right: 8px;
-    margin-top: 1px;
+    height: 20px;
+}
+
+QHeaderView::section {
+    height: 20px;
+}
+
+QPushButton {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+QPushButton:hover {
+    background-color: #c9c9c9;
+}
+
+QComboBox {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #a0a0a0;
+    selection-background-color: #1a75ff;
+}
+
+QComboBox::drop-down {
+    border: 0;
+    image: url(./icons/down_arrow.png);
+    width: 20px;
+    height: 20px;
+}
+
+#collapse_button::pressed {
+    background-color: #c5f5fe;
+    border-style: inset;
 }
 
 #green_button {
     background-color: #c5fed5;
+    border: 1px solid lightgray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
 }
 
 #checksum {
     color: gray;
 }
 
-#install_button {
-    margin: 5px;
+#table_button {
+    padding-left: 6px;
+    padding-right: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#table_button::pressed {
+    background-color: #c5f5fe;
+}
+
+#search {
+    border: 0px solid transparent;
+    border-bottom: 1px solid #a0a0a0;
+    background-color: transparent;
+}
+
+#url_label {
+    text-align: left;
+    color: black;
+    text-decoration: underline;
+    margin-left: 5px;
 }

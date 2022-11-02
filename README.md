@@ -1,10 +1,10 @@
-AI model manager. (will be, in development)
+AI Model Manager. (will be, in development)
 
 [ README.md ]
 [[ Frontend Specification ](spec/frontend.md "Frontend Spec")]
 [[ Backend Specification ](spec/backend.md "Backend Spec")]
 
-Pons improves user experience by reducing duplication of models stored locally. Eases developer access to AI models by returning the local path to the model or initiating download of the model. Linux / MacOS / Windows support planned
+AI Model Manager improves user experience by reducing duplication of models stored locally. Eases developer access to AI models by returning the local path to the model or initiating download of the model. Linux / MacOS / Windows support planned
 
 ![image](https://user-images.githubusercontent.com/654993/194756455-7d87bb76-24e5-4d4b-b046-8f5a656f63b7.png)
 

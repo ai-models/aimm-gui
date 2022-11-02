@@ -7,7 +7,8 @@ from widgets.table_widget import TableWidget
 
 class AddModelTableWidget(TableWidget):
     def __init__(self, main_window):
-        super().__init__(main_window)
+        super().__init__(main_window, 7)
+        self.name = "AddModelTableWidget"
 
         self.setColumnCount(7)
         self.setHorizontalHeaderLabels(['', 'Category', 'Name', 'Version', 'Size', 'Links', ''])
@@ -25,13 +26,13 @@ class AddModelTableWidget(TableWidget):
         self.horizontalHeaderItem(4).setTextAlignment(Qt.AlignRight)
         self.horizontalHeaderItem(5).setTextAlignment(Qt.AlignLeft)
 
-    def add_model(self, model: "ModelRow"):
+    def add_model(self, model: ModelRow):
         self.models.append(model)
         index = self.rowCount()
         # detailed text is not visible yet for the model
         self.detailedTextVisible[str(index)] = False
         self.insertRow(index)
-        for i, widget in enumerate(model.widgets):
+        for i, widget in enumerate(model.add_model_widgets):
             self.setCellWidget(index, i, widget)
 
         self.insertRow(index + 1)
@@ -43,9 +44,5 @@ class AddModelTableWidget(TableWidget):
         self.hideRow(index + 1)
         self.resizeRowToContents(index + 1)
 
-    def add_models(self, models: list[dict]):
-        for model_info in models:
-            model = ModelRow(self, model_info)
-            self.add_model(model)
-
-        self.resizeColumnsToContents()
+    def __repr__(self):
+        return "AddModelTableWidget"

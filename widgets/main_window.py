@@ -34,17 +34,33 @@ class MainWindow(QMainWindow):
         self.table_layout = QStackedLayout()
         self.main_layout.addLayout(self.table_layout)
 
-        self.models_widget = LibraryTableWidget(self)
-        self.table_layout.addWidget(self.models_widget)
+        self.models = self.json_handler.get_models()
+        self.categories = set(m["category"] for m in self.models)
+        self.top_bar.update_categories(self.categories)
 
         self.add_model_table_widget = AddModelTableWidget(self)
-        self.add_model_table_widget.add_models(self.json_handler.get_models())
+        self.library_table_widget = LibraryTableWidget(self)
+
+        self.library_table_widget.add_models(self.models)
+        self.add_model_table_widget.add_models(self.models)
+
+        self.table_layout.addWidget(self.library_table_widget)
         self.table_layout.addWidget(self.add_model_table_widget)
 
+        self.library_table_widget.resizeColumnToContents(4)
+        self.library_table_widget.resizeColumnToContents(5)
+        self.library_table_widget.resizeColumnToContents(6)
+        self.add_model_table_widget.resizeColumnToContents(2)
+        self.add_model_table_widget.resizeColumnToContents(6)
 
-        self.add_model_table_widget.setColumnWidth(2, 140)
-        self.add_model_table_widget.resizeColumnToContents(3)
-        self.add_model_table_widget.resizeColumnToContents(4)
+        self.top_bar.search.textChanged.connect(self.update_filter)
+        self.top_bar.categories.currentTextChanged.connect(self.update_filter)
 
         self.placeholder_widget = QLabel("TO DO")
         self.table_layout.addWidget(self.placeholder_widget)
+
+    def update_filter(self):
+        category = self.top_bar.categories.currentText().lower()
+        search = self.top_bar.search.text().lower()
+        self.add_model_table_widget.filter(category, search)
+        self.library_table_widget.filter(category, search)
