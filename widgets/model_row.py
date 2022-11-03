@@ -130,6 +130,7 @@ class ModelRow:
         self.main_window.library_table_widget.install_model(self)
         self.install_button.setText("Installed")
         self.install_button.setDisabled(True)
+        self.main_window.add_model_table_widget.selectRow(self.table.models.index(self) * 2)
 
     def delete_model(self):
         self.table.delete_model(self)
