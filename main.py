@@ -6,8 +6,8 @@ from pathlib import Path
 from PySide6.QtWidgets import QApplication
 import sys
 
-from widgets.main_window import MainWindow
-from widgets.trayicon import run
+from widgets.app_main_window import MainWindow
+from widgets.app_tray_icon import run
 
 if getattr(sys, "frozen", False):
     bundle_dir = Path(getattr(sys, "_MEIPASS", os.path.abspath(os.path.dirname(__file__))))

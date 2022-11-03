@@ -1,8 +1,8 @@
 from PySide6.QtCore import Qt
 from PySide6.QtWidgets import QHeaderView
 
-from widgets.model_row import ModelRow
-from widgets.table_widget import TableWidget
+from widgets.widget_table_model_row import ModelRow
+from widgets.widget_table import TableWidget
 
 
 class LibraryTableWidget(TableWidget):

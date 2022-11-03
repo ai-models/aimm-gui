@@ -3,7 +3,7 @@ from PySide6.QtCore import QUrl, Slot
 from PySide6.QtGui import QDesktopServices, QPixmap, Qt
 from PySide6.QtWidgets import QLabel, QPushButton, QWidget, QHBoxLayout, QApplication, QToolButton, QSizePolicy
 
-from widgets.detailed_widget import DetailedWidget
+from widgets.widget_table_widget_detail import DetailedWidget
 
 
 class ModelRow:

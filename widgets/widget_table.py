@@ -8,7 +8,7 @@ from PySide6 import QtCore
 from PySide6.QtCore import QModelIndex, QPersistentModelIndex, QEvent, QRect
 from PySide6.QtWidgets import QTableWidget, QStyledItemDelegate, QStyleOptionViewItem, QHeaderView
 from PySide6.QtGui import Qt, QPixmap, QMouseEvent, QColor, QPainter
-from widgets.model_row import ModelRow
+from widgets.widget_table_model_row import ModelRow
 
 
 bundle_dir = Path(getattr(sys, "_MEIPASS", os.path.abspath(os.path.dirname(__file__))))

@@ -2,9 +2,9 @@ from PySide6.QtCore import QSize
 from PySide6.QtWidgets import QMainWindow, QVBoxLayout, QWidget, QStackedLayout, QLabel, QSizePolicy
 from PySide6.QtGui import QIcon
 from logic import JsonHandler
-from widgets.library_table_widget import LibraryTableWidget
-from widgets.add_model_table_widget import AddModelTableWidget
-from widgets.top_bar import TopBar
+from widgets.widget_table_view_library import LibraryTableWidget
+from widgets.widget_table_view_add_model import AddModelTableWidget
+from widgets.app_top_bar import TopBar
 
 try:
     from ctypes import windll  # Only exists on Windows.
